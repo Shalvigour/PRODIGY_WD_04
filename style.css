@@ -1,0 +1,161 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+.background{
+    height:100vh;width:100vw;background-color:#1b2534;
+    background-size: cover;
+}
+
+.name{
+    text-align: left;
+    padding-top:180px;
+    padding-left:65px;
+    font-family:Abril fatface;
+    font-size: 45px;
+    color:white;
+
+}
+
+.typing{
+    color:#12d640;
+    font-size:26px
+}
+
+.task{
+    padding-left:65px;
+    color:white;
+    font-size:26px;
+}
+
+.navbar{
+    margin-top:20px;
+    height:60px;
+    width:60vw;
+    display:flex;
+    align-items:center;
+    justify-content: space-around;
+    margin-left:43px;
+}
+
+.navtitle{
+    text-decoration: none;
+    position:relative;
+    font-size:21px ;
+    color:white;
+    letter-spacing: 0.5px;
+}
+
+.navtitle:after{
+    content:"";
+    position:absolute;
+    background-color:#e68a00;
+    height:3px;
+    width:0%;
+    left:0;
+    bottom:-6px;
+    transition:all 0.3s ease-in-out 0s;
+}
+.main{
+    color:#12d640;
+    text-align:center;
+    margin-right:5px;
+    text-decoration: none;
+    font-size:21px;
+    letter-spacing:0.5px;
+    padding:0px;
+    position:relative;
+    font-weight:500;
+
+  }
+  .main:after{
+    content:"";
+      position:absolute;
+      background-color:#e68a00;
+      height:3px;
+      width:50%;
+      left:0;
+      bottom:-5px;
+  }
+.navtitle:hover{
+    color:#12d640;
+}
+
+.navtitle:hover:after{
+    width:50%;
+    
+}
+
+
+.icons{
+    display:flex;
+    margin-left:53px;
+    margin-top:0px;
+}
+
+.icons a{
+    width:40px;
+    height:40px;
+    text-align:center;
+    text-decoration:none;
+    border-radius:50%;
+    margin:8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color:white;
+    padding:5px;
+
+}
+
+.icons a:hover{
+    background-color:#1c7d32;
+}
+
+
+
+
+
+
+
+
+
+
+
+.git,.linkedin,.mail{
+    display:inline-block;
+    height:50px;
+    width:50px;
+    border-radius:50%;
+    background-color:#252b35;
+    margin-left:15px;
+    margin-bottom:57px;
+    justify-content:space-around;
+  }
+  .gitp{
+    width:30px;
+    height:30px;
+    background-color:blue;
+    background-image:url(https://th.bing.com/th/id/OIP.zX-hNsiuGzJnlhfpf4XrTAAAAA?w=184&h=184&c=7&r=0&o=5&dpr=1.5&pid=1.7);
+    background-size:cover;
+    border-radius:50%;
+    margin-left:10px;
+    margin-top:10px;
+    
+
+  }
+  .linkp{
+    width:30px;
+    height:30px;
+    background-color:orange;
+    border-radius:50%;
+    margin-left:10px;
+    margin-top:10px;
+
+  }
+  .mailp{
+    width:30px;
+    height:30px;
+    background-color:orange;
+    border-radius:50%;
+    margin-left:10px;
+    margin-top:10px;
+
+  }

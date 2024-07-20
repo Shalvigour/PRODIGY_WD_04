@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>    
+    <script src="https://kit.fontawesome.com/f014e37299.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+        .navigationbar{
+          height:95px;
+          width:1152px;
+          background-color:#121d2c;
+          padding-top:10px;
+          padding-bottom:10px;
+          padding-left:250px;
+          padding-right:65px;
+          margin-top:-10px;
+          margin-left: -10px;
+          display:flex;
+          align-items: center;
+          position:fixed;
+        }
+        .navtitle{
+          color:white;
+          text-align:center;
+          margin-right:35px;
+          text-decoration: none;
+          font-size:20px;
+          font-family:open sans;
+          letter-spacing:0.5px;
+          padding:0px;
+          position:relative;
+    
+        }
+        .main{
+          color:#12d640;
+          text-align:center;
+          margin-right:35px;
+          text-decoration: none;
+          font-size:20px;
+          font-family:open sans;
+          letter-spacing:0.5px;
+          padding:0px;
+          position:relative;
+  
+        }
+        .main:after{
+          content:"";
+            position:absolute;
+            background-color:#e68a00;
+            height:3px;
+            width:50%;
+            left:0;
+            bottom:-5px;
+        }
+          .navtitle:after{
+            content:"";
+            position:absolute;
+            background-color:#e68a00;
+            height:3px;
+            width:0%;
+            left:0;
+            bottom:-5px;
+            transition:all 0.3s ease-in-out 0s;
+          }
+          .navtitle:hover{
+            color:#12d640;
+          }
+          .navtitle:hover:after{
+            width:50%;
+          }
+          .background{
+            background-color:#1b2534;
+            height:415px;
+            width:99vw;
+            margin-left:-8px;
+            padding-top:160px;
+          }
+
+          .address{
+            height:140px;
+            width:420px;
+            background-color:#25364e;
+            margin-left:180px;
+            margin-top:15px;
+            display:inline-block;
+          }
+          .acover,.scover,.pcover,.ecover{
+            display:inline-block;
+            height:56px;
+            width:56px;
+            border-radius:50%;
+            background-color:#252b35;
+            margin-bottom:95px;
+            margin-top:10px;
+            margin-left:15px;
+          }
+          .ap{ 
+            height:30px;
+            width:30px;
+            border-radius:50%;
+            background-image:url(home.png);
+            background-size:cover;
+            background-color:#252b35;
+            margin-left:13px;
+            margin-top:12px;
+
+          }
+          
+          .social{
+            height:140px;
+            width:420px;
+            background-color:#25364e;
+            display:inline-block;
+            margin-left:30px;
+            margin-top:15px;
+          }
+          
+        
+          .sp{
+            height:28px;
+            width:28px; 
+            border-radius:50%;
+            background-image:url(socialc.png);
+            background-size:cover;
+            background-color:#252b35;
+            margin-left:13px;
+            margin-top:12px;
+          }
+          .email{
+            height:100px;
+            width:420px;
+            background-color:#25364e;
+            margin-left:180px;
+            margin-top:10px;
+            display:inline-block;
+          }
+          .phone{
+            height:100px;
+            width:420px;
+            background-color:#25364e;
+            display:inline-block;
+            margin-left:30px;
+            margin-top:10px;
+          }
+          .ep{
+            height:28px;
+            width:28px;
+            border-radius:50%;
+            background-image:url(emailp.png);
+            background-size:cover;
+            background-color:#252b35;
+            margin-left:13px;
+            margin-top:12px;
+          }
+
+          .pp{
+            height:28px;
+            width:28px;
+            border-radius:50%;
+            background-image:url(phonep.png);
+            background-size:cover;
+            background-color:#252b35;
+            margin-left:13px;
+            margin-top:12px;
+          }
+          .atext{
+            display:inline-block;
+          }
+          .htext{
+            margin-top:13px;
+            margin-bottom:15px;
+            margin-left:20px;
+            color:#12d640;
+            font-size:22px;
+            font-family:"Poppins", sans-serif;
+          }
+          .ptext{
+            margin-top:3px;
+            margin-bottom:0px;
+            margin-left:20px;
+            color:white;
+            font-family:"Poppins", sans-serif;
+            font-size:14px;
+          }
+          .icons{
+            display:inline-block;
+            margin-left:10px;
+            margin-top:-10px;
+        }
+        
+        .icons a{
+          display:inline-block;
+            height:36px;
+            width:36px;
+            text-align:center;
+            text-decoration:none;
+            border-radius:50%;
+            margin:5px;
+            background-color: rgba(255, 255, 255, 0.1);
+            color:white;
+            padding:5px;
+        
+        }
+        .icons a i{margin-top:8px;
+
+        }
+        .icons a:hover{
+            background-color:#1c7d32;
+        }
+        
+        a:is(:link, :active, :visited).active{
+          color:#12d640;
+        }
+    </style>
+</head>
+<body>
+    
+    <nav class="navigationbar">
+      <a href="index.html" class="navtitle">Home</a>
+      <a href="about.html" class="navtitle">About</a>
+      <a href="education.html" class="navtitle">Education</a>
+      <a href="projects.html" class="navtitle">Projects</a>
+      <a href="Skills.html" class="navtitle">Skills</a>
+      <a href="https://drive.google.com/file/d/1QF8lG2qZ7Y--zHjWe-CY7FKza-DuvOjq/view" class="navtitle">Resume</a>
+      <a href="contact.html"  class="main" class="active">Contact</a>
+      </nav>
+
+      <div class="background">
+
+        <div class="address">
+          <div class="acover"><div class="ap"></div></div>
+          <div class="atext">
+            <h3 class="htext">My Address</h3>
+            <p class="ptext">111,Mangalmay Villas</p>
+            <p class="ptext">Narmadapuram(461001)
+            <p class="ptext">M.P. , India <br><br><br><br></p>
+            </p>
+          </div>
+        </div>  
+        <div class="social">
+           <div class="scover"><div class="sp"></div></div>
+           <div class="atext">
+            <h3 class="htext">Social Links</h3>
+            <div class="icons">
+              <a href="https://www.linkedin.com/in/shalvi-gour-323186299/"> <i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="https://github.com/Shalvigour"><i class="fa-brands fa-github"></i></a>
+              <a href="mailto:shalvigour@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <br><br><br> <br>
+            </div>
+        </div>
+        <div class="email">
+          <div class="ecover"><div class="ep"></div></div>
+          <div class="atext">
+            <h3 class="htext">Email</h3>
+            <p class="ptext">shalvigour@gmail.com</p>
+            <br><br><br><br><br>
+          </div>
+        </div>
+
+        <div class="phone">
+          <div class="pcover"> <div class="pp"></div></div>
+          <div class="atext">
+            <h3 class="htext">Contact Me</h3>
+            <p class="ptext">+91 9826036136</p>
+            <br><br><br><br><br>
+          </div>
+        </div>
+        
+
+      </div>
+
+</body>
+</html>
